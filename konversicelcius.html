@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend align='center'>KONVERSI SUHU CELCIUS</legend>
+			<label for='suhuc'>Masukan Suhu Celcius :</label>
+			<input type="text" id='suhuc'>
+			<button onclick='hitung()'>Hitung</button>
+		</fieldset>
+	</form>
+ <script type="text/javascript">
+    function hitung(){
+ 	var c = parseInt(document.getElementById('suhuc').value);
+
+ 	var k = c + 274.15;
+ 	var r = c * 0.8;
+ 	var f = c * 1.8 + 32; 
+ 	var ra = 1.8 * (c+491.67);
+ 	var d  = (100-c) * 1.5;
+ 	var n  = c*33/100;
+ 	var ro = c*21/40+7.5;
+
+    document.write('<h3>APLIKASI KONVERSI SUHU CELCIUS</h3>');
+	 document.write('Suhu celcius :' + c +'<br>');
+	document.write('<b>K=C+274.15' + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke kelvin adalah : ' + k +'<br><br>');
+	 document.write('Suhu celcius :' + c +'<br>');
+    document.write('<b>R=C*0.8'  + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke reamur adalah : ' + r +'<br><br>');
+	 document.write('Suhu celcius :' + c +'<br>');
+    document.write('<b>F=C*1.8+32'  + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke fahrenheit adalah : ' + f +'<br><br>');
+	 document.write('Suhu celcius :' + c +'<br>');
+    document.write('<b>Ra=1.8*(C+491.67)'  + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke rankine adalah : ' + ra +'<br><br>');
+	 document.write('Suhu celcius :' + c +'<br>');
+    document.write('<b>D=(100-C)*1.5'  + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke delisie adalah : ' + d +'<br><br>');
+	 document.write('Suhu celcius :' + c +'<br>');
+    document.write('<b>N=C*33/100'  + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke newton adalah : ' + n +'<br><br>');
+	 document.write('Suhu celcius :' + c +'<br>');
+    document.write('<b>Ro=C*21/40+7.5' + '<br></b>');
+ 	document.write('hasil konversi suhu dari celcius ke romer adalah : ' + ro +'<br>');
+	}
+ </script>
+</body>
+</html>

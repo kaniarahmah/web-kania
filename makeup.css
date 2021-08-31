@@ -1,0 +1,18 @@
+    
+     h1{color:green;
+	    font-size:40px;
+		font-family:consolas;
+		text-align:center;
+	   }
+	 h2{color:black;
+	    font-size:25px;
+		font-family:arial;
+		text-align:center;
+	   }
+	 p{color:brown;
+	   text-align:justify;
+	   background-color:white;
+	  }
+  body{background-image:url(gambarr.png);
+	  }	   
+	
